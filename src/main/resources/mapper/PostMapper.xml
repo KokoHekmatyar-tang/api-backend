@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.tang.springbootinit.mapper.PostMapper">
+<mapper namespace="com.tang.project.mapper.PostMapper">
 
-    <resultMap id="BaseResultMap" type="com.tang.springbootinit.model.entity.Post">
+    <resultMap id="BaseResultMap" type="com.tang.project.model.entity.Post">
         <id property="id" column="id" jdbcType="BIGINT"/>
         <result property="title" column="title" jdbcType="VARCHAR"/>
         <result property="content" column="content" jdbcType="VARCHAR"/>
@@ -24,7 +23,7 @@
         createTime,updateTime,isDelete
     </sql>
 
-    <select id="listPostWithDelete" resultType="com.tang.springbootinit.model.entity.Post">
+    <select id="listPostWithDelete" resultType="com.tang.project.model.entity.Post">
         select *
         from post
         where updateTime >= #{minUpdateTime}

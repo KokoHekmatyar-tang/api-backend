@@ -144,3 +144,24 @@ fabric.properties
 # Android studio 3.1+ serialized cache file
 .idea/caches/build_file_checksums.ser
 
+# 首先保护所有模块目录不被忽略
+!common/
+!sdk/
+!interface/
+!gateway/
+
+# 然后在这些模块内部应用忽略规则
+common/target/
+common/build/
+sdk/target/
+sdk/build/
+interface/target/
+interface/build/
+gateway/target/
+gateway/build/
+
+# 保护模块内的源码目录
+!common/src/
+!sdk/src/
+!interface/src/
+!gateway/src/
