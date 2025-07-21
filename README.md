@@ -14,18 +14,14 @@
 - MyBatis + MyBatis Plus 数据访问（开启分页）
 - Spring Boot 调试工具和项目处理器
 - Spring AOP 切面编程
-- Spring Scheduler 定时任务
-- Spring 事务注解
 
 ### 数据存储
 
 - MySQL 数据库
 - Redis 内存数据库
-- Elasticsearch 搜索引擎
 
 ### 工具类
 
-- Easy Excel 表格处理
 - Hutool 工具库
 - Apache Commons Lang3 工具类
 - Lombok 注解
